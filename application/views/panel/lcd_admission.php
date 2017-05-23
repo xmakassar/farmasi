@@ -109,7 +109,7 @@ $this->load->view('template/head');
               <div class="box-body text-center">
                 <span class="clock" id="sekarang"></span>
               </div> -->
-              <img src="<?php echo base_url() ?>assets/aplikasi/images/poli1.png" class="img-rounded" alt="Image"  height="80" width="350">
+              <img src="<?php echo base_url() ?>assets/aplikasi/images/farmasi.png" class="img-rounded" alt="Image"  height="80" width="350">
           </div>
         </div>
         <div class="col-xs-6">
@@ -270,7 +270,7 @@ $this->load->view('template/head');
     $.ajax({
       url : base_url+"panel/getQueue",
       method : "POST",
-      data : {"loket_login":"poli1"},
+      data : {"loket_login":"farmasi"},
       dataType : "JSON",
       success : function (e) {
           $("#statplay").text("memanggil..")
