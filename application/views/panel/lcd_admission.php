@@ -161,7 +161,7 @@ $this->load->view('template/head');
                        <div class="box-body">
                           <center>
                             <video class="responsive-video" width="600px" id="test1" onended="run()" autoplay muted controls>
-                                <source src="<?php echo base_url("assets/aplikasi/video/tips1.mp4") ?>" type="video/mp4" class="center">
+                                <source src="<?php echo base_url("assets/aplikasi/video/video1.mp4") ?>" type="video/mp4" class="center">
                             </video>
                           </center>
                       </div>

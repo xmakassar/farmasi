@@ -132,13 +132,7 @@ class Panel extends CI_Controller {
 		$url = "";
 		$type = $this->input->post("type");
 		$type_cetak = "";
-		if ($type == "poli1") {
-			$url = "./assets/aplikasi/data/print_poli1.php";
-		} else if ($type == "poli2") {
-			$url = "./assets/aplikasi/data/print_poli2.php";
-		} else if ($type=="khusus") {
-			$url = "./assets/aplikasi/data/print_khusus.php";
-		}
+		$url = "./assets/aplikasi/data/print_farmasi.php";
 		$nomor = read_file($url);
 		$nomor+=1;
 		write_file($url,$nomor,"w");
@@ -156,7 +150,7 @@ class Panel extends CI_Controller {
 		} else {
 			$type_cetak = "Pasien Khusus";
 		}
-		$hasil_print = $this->printStruk($nomor,$type_cetak);
+		//$hasil_print = $this->printStruk($nomor,$type_cetak);
 	}
 
 	#antrian
